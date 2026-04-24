@@ -1765,5 +1765,6 @@
         <!-- Custom js for this page-->
         <script src="{{ asset('frontend-dash/template/js/dashboard.js')}}"></script>
         <!-- End custom js for this page-->
+         @vite(['resources/js/app.js'])
     </body>
 </html>
