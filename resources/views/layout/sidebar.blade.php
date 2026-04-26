@@ -21,6 +21,17 @@
                                 <span class="menu-title">Data Guru</span>
                             </a>
                         </li>
+                         <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="{{route('kriteria.index')}}"
+                            >
+                                <i
+                                    class="typcn typcn-mortar-board menu-icon"
+                                ></i>
+                                <span class="menu-title">Kriteria</span>
+                            </a>
+                        </li>
                           <li class="nav-item">
                             <a
                                 class="nav-link"
