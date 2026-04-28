@@ -18,4 +18,9 @@ class KriteriaModel extends Model
         'tipe',
         
     ];
+
+    public function penilaian()
+    {
+        return $this->hasMany(PenilaianModel::class);
+    }
 }

@@ -3,6 +3,9 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DataGuruController;
 use App\Http\Controllers\KriteriaController;
+use App\Http\Controllers\LaporanController;
+use App\Http\Controllers\PenilaianController;
+use App\Http\Controllers\PerhitunganController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -44,6 +47,21 @@ Route::middleware('auth')->group(function () {
     Route::delete('/kriteria.destroy/{id}', [KriteriaController::class, 'destroy'])->name('kriteria.destroy');
     Route::post('/kriteria.store', [KriteriaController::class, 'store'])->name('kriteria.store');
     Route::put('/kriteria.update/{id}', [KriteriaController::class, 'update'])->name('kriteria.update');
+
+    Route::get('/penilaian', [PenilaianController::class, 'index'])->name('penilaian');
+    Route::get('/penilaian/create', [PenilaianController::class, 'create'])->name('penilaian.create');
+    Route::get('/penilaian.edit/{id}', [PenilaianController::class, 'edit'])->name('penilaian.edit');
+    Route::delete('/penilaian.destroy/{id}', [PenilaianController::class, 'destroy'])->name('penilaian.destroy');
+    Route::post('/penilaian.store', [PenilaianController::class, 'store'])->name('penilaian.store');
+    Route::put('/penilaian.update/{id}', [PenilaianController::class, 'update'])->name('penilaian.update');
+
+    Route::get('/saw/matrix', [PerhitunganController::class, 'index'])->name('saw.matrix');
+    Route::get('/saw/normalisasi', [PerhitunganController::class, 'normalisasi'])->name('saw.normalisasi');
+    Route::get('/saw/rangking', [PerhitunganController::class, 'rangking'])->name('saw.rangking');
+
+    Route::get('/laporan', [LaporanController::class, 'index'])->name('laporan.index');
+
+    
 
 
 

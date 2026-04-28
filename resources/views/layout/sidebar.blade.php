@@ -2,12 +2,11 @@
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="{{route('dashboard')}}">
                                 <i
                                     class="typcn typcn-device-desktop menu-icon"
                                 ></i>
                                 <span class="menu-title">Dashboard</span>
-                                <div class="badge badge-danger">new</div>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -35,7 +34,7 @@
                           <li class="nav-item">
                             <a
                                 class="nav-link"
-                                href="https://bootstrapdash.com/demo/polluxui-free/docs/documentation.html"
+                                href="{{route('penilaian')}}"
                             >
                                 <i
                                     class="typcn typcn-mortar-board menu-icon"
@@ -62,22 +61,22 @@
                                     <li class="nav-item">
                                         <a
                                             class="nav-link"
-                                            href="pages/ui-features/buttons.html"
-                                            >Buttons</a
+                                            href="{{route('saw.matrix')}}"
+                                            > Matriks Keputusan</a
                                         >
                                     </li>
                                     <li class="nav-item">
                                         <a
                                             class="nav-link"
-                                            href="pages/ui-features/dropdowns.html"
-                                            >Dropdowns</a
+                                            href="{{route('saw.normalisasi')}}"
+                                            >Normalisasi</a
                                         >
                                     </li>
                                     <li class="nav-item">
                                         <a
                                             class="nav-link"
-                                            href="pages/ui-features/typography.html"
-                                            >Typography</a
+                                            href="{{route('saw.rangking')}}"
+                                            >Perangkingan</a
                                         >
                                     </li>
                                 </ul>
@@ -87,7 +86,7 @@
                           <li class="nav-item">
                             <a
                                 class="nav-link"
-                                href="https://bootstrapdash.com/demo/polluxui-free/docs/documentation.html"
+                                href="{{route('laporan.index')}}"
                             >
                                 <i
                                     class="typcn typcn-mortar-board menu-icon"
@@ -95,16 +94,15 @@
                                 <span class="menu-title">Laporan</span>
                             </a>
                         </li>
-                          <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="https://bootstrapdash.com/demo/polluxui-free/docs/documentation.html"
-                            >
-                                <i
-                                    class="typcn typcn-mortar-board menu-icon"
-                                ></i>
-                                <span class="menu-title">Keluar</span>
-                            </a>
+                         <li class="nav-item">
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+
+                                <button type="submit" class="nav-link btn btn-link w-100 text-left border-0 bg-transparent">
+                                    <i class="typcn typcn-mortar-board menu-icon"></i>
+                                    <span class="menu-title">Keluar</span>
+                                </button>
+                            </form>
                         </li>
                        
                       

@@ -19,4 +19,9 @@ class DataGuruModel extends Model
         
     ];
 
+    public function penilaian()
+    {
+        return $this->hasMany(PenilaianModel::class);
+}
+
 }

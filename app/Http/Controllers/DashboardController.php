@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DataGuruModel;
+use App\Models\KriteriaModel;
+use App\Models\PenilaianModel;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -11,7 +15,17 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard.index');
+        $guru = DataGuruModel::count();
+        $kriteria = KriteriaModel::count();
+        $penilaian = PenilaianModel::count();
+        $user = User::count();
+
+        return view('dashboard.index', compact(
+            'guru',
+            'kriteria',
+            'penilaian',
+            'user'
+        ));
 
     }
 
