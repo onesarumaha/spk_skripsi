@@ -8,7 +8,7 @@
                     <a href="{{ route('kriteria.create') }}" class="btn btn-primary mb-3">
                         + Tambah Kriteria
                     </a>
-                  <h4 class="card-title">Data Guru</h4>
+                  <h4 class="card-title">Data Kriteria</h4>
                   
                   <div class="table-responsive">
                     <table class="table table-hover">
