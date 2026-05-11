@@ -60,6 +60,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/saw/rangking', [PerhitunganController::class, 'rangking'])->name('saw.rangking');
 
     Route::get('/laporan', [LaporanController::class, 'index'])->name('laporan.index');
+    Route::get('/laporan.cetakPdf', [LaporanController::class, 'cetakPdf'])->name('laporan.cetakPdf');
 
     
 

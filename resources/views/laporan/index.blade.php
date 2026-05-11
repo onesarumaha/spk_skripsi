@@ -52,9 +52,13 @@
                             <th width="300">Nama Sistem</th>
                             <td>SPK Penilaian Guru Metode SAW</td>
                         </tr>
-                        <tr>
-                            <th>Tanggal Cetak</th>
-                            <td>{{ date('d-m-Y') }}</td>
+                       <tr>
+                        <th>Cetak</th>
+                            <td>
+                                <a href="{{ route('laporan.cetakPdf') }}" target="_blank" class="btn btn-danger btn-sm">
+                                    <i class="mdi mdi-printer"></i> Cetak PDF
+                                </a>
+                            </td>
                         </tr>
                         <tr>
                             <th>Total Guru</th>
