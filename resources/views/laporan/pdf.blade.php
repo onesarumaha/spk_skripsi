@@ -109,7 +109,7 @@
                 Mengetahui,<br>
                 Kepala Sekolah
                 <br><br><br><br>
-                ______________________
+                Darius Nono, S.Pd
             </td>
         </tr>
     </table>

@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.3">
+  <diagram name="Page-1" id="3oYw0quM5BwoP_scw09C">
+    <mxGraphModel dx="872" dy="465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bAhEOaycKb-qCk_zUU2l-14" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;Users&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;line-height: 180%;&quot;&gt;- id (int)&lt;br&gt;- nama (string)&lt;br&gt;- username&amp;nbsp;(string)&lt;br&gt;- email&amp;nbsp;(string)&lt;br&gt;- password&amp;nbsp;(string)&lt;br&gt;- role&amp;nbsp;(string)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+Login()&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="50" y="103" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="bAhEOaycKb-qCk_zUU2l-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="bAhEOaycKb-qCk_zUU2l-15" target="bAhEOaycKb-qCk_zUU2l-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bAhEOaycKb-qCk_zUU2l-15" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;Guru&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;line-height: 180%;&quot;&gt;- id (int)&lt;br&gt;- nama_guru&amp;nbsp;(string)&lt;br&gt;- nip (int)&lt;br&gt;- jk&lt;br&gt;- tgl_lahir&lt;br&gt;- np_hp (int)&lt;br&gt;- jabatan&amp;nbsp;(string)&lt;br&gt;- alamat (text)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+getNilai()&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="290" y="90" width="180" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="bAhEOaycKb-qCk_zUU2l-16" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;Penilaian&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;line-height: 180%;&quot;&gt;- id (int)&lt;br&gt;- id_kriteria (int)&lt;br&gt;- id_guru (int)&lt;br&gt;- nilai (float)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+getKriteria()&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="580" y="90" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="bAhEOaycKb-qCk_zUU2l-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="bAhEOaycKb-qCk_zUU2l-17" target="bAhEOaycKb-qCk_zUU2l-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bAhEOaycKb-qCk_zUU2l-17" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;Kriteria&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;line-height: 180%;&quot;&gt;- id (int)&lt;br&gt;- nama (string)&lt;br&gt;- bobot (float)&lt;br&gt;- type(string)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+getNilaiGuru()&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="310" y="408" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="bAhEOaycKb-qCk_zUU2l-20" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="475" y="88" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bAhEOaycKb-qCk_zUU2l-21" value="*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="535" y="138" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bAhEOaycKb-qCk_zUU2l-24" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="505" y="378" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bAhEOaycKb-qCk_zUU2l-25" value="*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="545" y="188" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

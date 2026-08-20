@@ -1,0 +1,6 @@
+data guru
+kriteria
+bobot
+penilaian
+hasil
+laporan
