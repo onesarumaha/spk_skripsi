@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('penilaian', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('guru_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('kriteria_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('guru_id')->constrained('data_guru')->cascadeOnDelete();
+            $table->foreignId('kriteria_id')->constrained('kriteria')->cascadeOnDelete();
             $table->float('nilai');
             $table->timestamps();
 
